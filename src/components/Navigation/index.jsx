@@ -10,22 +10,24 @@ import Container from "@material-ui/core/Container";
 const useStyles = makeStyles((theme) => ({
     root: {
         backgroundColor: theme.palette.background.paper,
-        display: 'flex',
         height: '100%',
-        flexDirection: "column"
+        width: '100%'
     },
     tabs: {
         borderRight: `1px solid ${theme.palette.divider}`,
     },
     tabsHeader: {
-        height: theme.spacing(28),
+        width: "100%",
+        height: theme.spacing(20),
         backgroundColor: theme.palette.primary.light
     }
 }));
 
 const StyledTab = styled(Tab)({
+    fontWeight: "bold",
+    fontSize: "1.2rem",
     fontFamily: [
-        '"Varela Round"',
+        'Courier',
     ].join(","),
 })
 

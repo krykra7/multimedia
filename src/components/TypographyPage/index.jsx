@@ -1,12 +1,12 @@
 import React from "react";
 import * as TITLES from "../../constants/titles"
 import BaseContent from "../BaseContent";
-import {Typography} from "@material-ui/core";
+import Typography from "@material-ui/core/Typography";
 
 export default function TypographyPage() {
     return (
         <BaseContent title={TITLES.TYPOGRAPHY}>
-            <Typography align={"left"}>
+            <Typography align={"center"} style={{fontFamily: "Courier"}}>
                 Do pracy zostały wybrane dwie czcionki.<br/>
 
                 Czcionka podstawowa będzie służyła aby przekazać klientom wszystkie
@@ -20,7 +20,7 @@ export default function TypographyPage() {
 
             <br/>
 
-            <Typography align={"left"} style={{fontFamily: "Lato"}}>
+            <Typography align={"center"} style={{fontFamily: "Lato"}}>
                 Czcionka uzupełniająca. Ta czcionka będzie służyła do stworzenia loga firmy. <br/>
                 Wybrana czcionka: "Lato"; w wariancie "h5" <br/><br/>
 

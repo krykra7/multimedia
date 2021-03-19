@@ -1,9 +1,8 @@
 import React from "react";
 import {HashRouter as Router, Route} from 'react-router-dom';
 import Routes from "./Routes";
-import {createMuiTheme, CssBaseline, MuiThemeProvider, responsiveFontSizes} from "@material-ui/core";
+import {createMuiTheme, CssBaseline, makeStyles, MuiThemeProvider, responsiveFontSizes} from "@material-ui/core";
 import Navigation from "../Navigation";
-import {makeStyles} from "@material-ui/styles";
 
 const theme = createMuiTheme({
     typography: {
@@ -46,11 +45,30 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         height: '100%',
     },
+    navigation: {
+        [theme.breakpoints.down('sm')]: {
+            width: "30%",
+        },
+        [theme.breakpoints.up('md')]: {
+            width: "20%",
+        },
+        [theme.breakpoints.up('lg')]: {
+            width: "10%",
+        },
+    },
     content: {
+        [theme.breakpoints.down('sm')]: {
+            width: "70%",
+        },
+        [theme.breakpoints.up('md')]: {
+            width: "80%",
+        },
+        [theme.breakpoints.up('lg')]: {
+            width: "90%",
+        },
         overflow: 'hidden',
         textAlign: 'center',
         justifyContent: 'center',
-        flexGrow: 1,
     }
 }))
 
@@ -62,7 +80,9 @@ function App() {
             <CssBaseline/>
             <Router>
                 <div className={classes.root}>
-                    <Navigation/>
+                    <div className={classes.navigation}>
+                        <Navigation/>
+                    </div>
                     <div className={classes.content}>
                         <Routes/>
                     </div>

@@ -5,8 +5,8 @@ import Main from "../Main";
 import Card from "../Card";
 import Logo from "../Logo";
 import Printing from "../Printing";
-import TypographyPage from "../Typography";
 import Concept from "../Concept";
+import TypographyPage from "../TypographyPage";
 
 export default function Routes() {
     return (

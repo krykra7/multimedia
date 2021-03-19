@@ -5,8 +5,8 @@ import {makeStyles} from "@material-ui/styles";
 const useStyles = makeStyles((theme) => ({
     title: {
         paddingBottom: theme.spacing(4),
-        paddingTop: theme.spacing(8),
-        height: theme.spacing(28),
+        paddingTop: theme.spacing(4),
+        height: theme.spacing(20),
         width: '100%',
         backgroundColor: theme.palette.primary.light,
 
@@ -14,18 +14,12 @@ const useStyles = makeStyles((theme) => ({
     content: {
         overflow: "auto",
         maxHeight: "80vh",
-        maxWidth: '100%',
+        minWidth: '100%',
         paddingTop: theme.spacing(8),
         paddingBottom: theme.spacing(8),
-        paddingRight: theme.spacing(16),
-        paddingLeft: theme.spacing(16)
+        paddingRight: theme.spacing(20),
+        paddingLeft: theme.spacing(20)
     },
-    logoIcon: {
-        minWidth: '50%',
-        minHeight: '50%',
-        maxWidth: '100%',
-        maxHeight: '100%',
-    }
 }))
 
 export default function BaseContent(props) {
@@ -39,7 +33,7 @@ export default function BaseContent(props) {
                         {title}
                     </Typography>
             </Container>
-            <Container className={classes.content}>
+            <Container className={classes.content} maxWidth>
                 {children}
             </Container>
         </div>
