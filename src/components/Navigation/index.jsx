@@ -20,6 +20,14 @@ const useStyles = makeStyles((theme) => ({
         width: "100%",
         height: theme.spacing(20),
         backgroundColor: theme.palette.primary.light
+    },
+    tabsFooter: {
+        position: "absolute",
+        bottom: 0,
+        left: 0,
+        width: "100%",
+        height: theme.spacing(4),
+        backgroundColor: theme.palette.primary.light
     }
 }));
 
@@ -66,6 +74,7 @@ export default function Navigation() {
                 <StyledTab label={TITLES.CARD} value={4}/>
                 <StyledTab label={TITLES.PRINTING} value={5}/>
             </Tabs>
+            <div className={classes.tabsFooter}/>
         </div>
     )
 };

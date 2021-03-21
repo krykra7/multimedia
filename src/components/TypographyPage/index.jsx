@@ -11,10 +11,10 @@ export default function TypographyPage() {
 
                 Czcionka podstawowa będzie służyła aby przekazać klientom wszystkie
                 najważniejsze informacje na stronie internetowej.<br/>
-                Wybrana czcionka: "Varela Round"; w wariancie "h5" <br/><br/>
+                Wybrana czcionka: "Varela Round"<br/><br/>
 
                 <Typography variant={"h5"} style={{fontFamily: "Courier"}}>
-                    Przykład wybranej czcionki: <b>WYBRANA CZCIONKA</b>
+                    Przykład wybranej czcionki w rozmiarze "h5": <b>WYBRANA CZCIONKA</b>
                 </Typography>
             </Typography>
 
@@ -22,10 +22,10 @@ export default function TypographyPage() {
 
             <Typography align={"center"} style={{fontFamily: "Lato"}}>
                 Czcionka uzupełniająca. Ta czcionka będzie służyła do stworzenia loga firmy. <br/>
-                Wybrana czcionka: "Lato"; w wariancie "h5" <br/><br/>
+                Wybrana czcionka: "Lato".<br/><br/>
 
                 <Typography variant={"h5"} style={{fontFamily: "Lato"}}>
-                    Przykład wybranej czcionki: <b>WYBRANA CZCIONKA</b>
+                    Przykład wybranej czcionki w rozmiarze "h5": <b>WYBRANA CZCIONKA</b>
                 </Typography>
             </Typography>
         </BaseContent>
